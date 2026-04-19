@@ -30,6 +30,7 @@ const createBooking = async (customerId, eventId, ticketsCount) => {
     emitter.emit('BOOKING_CONFIRMED', {
       customerId,
       eventId,
+      title: event.title,
       ticketsCount
     });
 
